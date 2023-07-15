@@ -65,11 +65,6 @@ header {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.card-title {
-  font-weight: 700;
-  font-size: 22px;
-}
-
 .information-list {
   list-style-type: none;
   padding-left: 0;
@@ -79,16 +74,22 @@ header {
   margin-bottom: 10px;
 }
 
+.card-title {
+  font-weight: 700;
+  font-size: 22px;
+}
+
 .user-items {
-  margin-top: 32px;
+  margin-top: 38px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .user-items .item {
-  margin-bottom: 24px;
-  margin-right: 48px;
+  margin-bottom: 27px;
+  margin-right: 24px;
+  margin-left: 24px;
   text-align: center;
 }
  
@@ -103,13 +104,17 @@ header {
   margin: 20px auto;
 }
 
-.a {
+.user-items .item .more {
   color: white;
   margin: 0px;
-  text-align: center;
-  background-color: green;
-  padding: 10px 0;
-  border-radius: 3px;
+  background-color: mediumturquoise;
+  padding: 5px 40px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.user-items .item .more:hover {
+  background-color: cadetblue;
 }
 
 footer {
